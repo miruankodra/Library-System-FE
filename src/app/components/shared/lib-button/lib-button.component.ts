@@ -12,6 +12,7 @@ export class LibButtonComponent {
   height = input<string>('h-[50px]');
   background = input<string>('bg-white bg-opacity-60');
   border = input<string>('border-2 border-white rounded-[15px]');
-  text = input<string>('text-black text-[36px]');
+  text = input<string>('text-black text-[18px]');
   font = input<string>('font-semibold');
+  style = input<string>('p-2 flex flex-row items-center justify-center');
 }
