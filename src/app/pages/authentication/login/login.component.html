@@ -1,6 +1,8 @@
-<div class="w-screen h-screen flex flex-row justify-end items-center bg-[url('assets/images/backgrounds/login-bg.jpg')] bg-cover bg-center bg-no-repeat">
-  <div class="w-2/5 h-full flex flex-col items-center justify-center gap-2 bg-white bg-opacity-35 border-2 border-white rounded-l-[15px] backdrop-blur-sm">
-    <h2 class="text-[32px] text-white font-semibold">Login</h2>
-
+<div class="relative w-screen h-screen flex flex-row justify-end items-center bg-[url('assets/images/backgrounds/login-bg.jpg')] bg-cover bg-center bg-no-repeat">
+  <div class="absolute inset-0 bg-black opacity-45"></div>
+  <div class="w-2/5 h-full flex flex-col items-center justify-center gap-3 bg-white bg-opacity-35 border-2 border-white rounded-l-[15px] backdrop-blur-sm">
+    <h2 class="text-[32px] text-white font-semibold mb-2">Login</h2>
+    <app-lib-input type="email" placeholder="Email"/>
+    <app-lib-input type="password" placeholder="Password"/>
   </div>
 </div>
