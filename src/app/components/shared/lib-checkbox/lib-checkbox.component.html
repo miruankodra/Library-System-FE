@@ -1,0 +1,11 @@
+<div>
+  <input #checkbox type="checkbox" class="hidden" />
+  <div class="w-full flex flex-row items-center justify-start gap-2">
+    <div class="relative w-[20px] max-w-[20px] aspect-square bg-white bg-opacity-60 rounded-[5px] border-[1px] border-white cursor-pointer" (click)="toggleCheckbox(checkbox)">
+      @if(isChecked){
+        <img src="assets/images/icons/check.svg" alt="checkbox" class="absolute w-[40px]"/>
+      }
+    </div>
+    <h3><ng-content></ng-content></h3>
+  </div>
+</div>
