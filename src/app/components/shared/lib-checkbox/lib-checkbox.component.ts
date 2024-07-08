@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, output} from '@angular/core';
 
 @Component({
   selector: 'app-lib-checkbox',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './lib-checkbox.component.scss'
 })
 export class LibCheckboxComponent {
+  isChecked: boolean = false
+  onCheckboxChange = output<boolean>();
 
+  toggleCheckbox(el: HTMLInputElement) {
+    el.checked = !el.checked;
+    this.isChecked = el.checked;
+    this.onCheckboxChange.emit(this.isChecked);
+  }
 }
